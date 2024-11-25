@@ -18,71 +18,26 @@ h1 {
     text-align: center;
 }
 
-.card-1 {
-    background-image: url('../photos/scream1.png');
+div.card-front {
+    background-image: url('../Assets/scream0.png');
     background-size: contain;
+    background-position: center;
+    width: 100px;
+    height: 100px;
 }
 
-.card-2 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
+.card-inner {
+    display: block;
+    cursor: pointer;
 }
 
-.card-3 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
+.card-inner.flipped {
+    transform: rotateY(180deg);
 }
 
-.card-4{
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
-}
-
-.card-5 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
-}
-
-.card-6 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
-}
-
-.card-7 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
-}
-
-.card-8 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
-}
-
-.card-9 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
-}
-.card-10 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
-}
-
-.card-11 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
-}
-
-.card-12 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
-}
-
-.card-1 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
-}
-
-.card-1 {
-    background-image: url('../photos/scream1.png');
-    background-size: contain;
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden
 }
