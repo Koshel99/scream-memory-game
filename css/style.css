@@ -13,10 +13,12 @@ h1 {
     grid-template-rows: repeat(3, 100px);
     gap: 5px;
     justify-content: center;
-    margin: 20px, 0;
+    margin: 20px 0;
     margin-top: 100px;
     text-align: center;
 }
+
+/* Styling for the front side of the card */
 
 div.card-front {
     background-image: url('../Assets/scream0.png');
@@ -29,6 +31,12 @@ div.card-front {
 .card-inner {
     display: block;
     cursor: pointer;
+    transition: transform 0.6s;
+    position: relative;
+}
+
+.card-back {
+    transform: rotateY(180deg);
 }
 
 .card-inner.flipped {
@@ -40,4 +48,78 @@ div.card-front {
     width: 100%;
     height: 100%;
     backface-visibility: hidden
+}
+
+/* Individual card styles for back cards */
+
+#scream1 {
+    background-image: url('../photos/scream1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#scream2 {
+    background-image: url('../photos/scream2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#scream3 {
+    background-image: url('../photos/scream3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#scream4 {
+    background-image: url('../photos/scream4.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#scream5 {
+    background-image: url('../photos/scream5.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#scream6 {
+    background-image: url('../photos/scream6.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#scream7 {
+    background-image: url('../photos/scream7.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#scream8 {
+    background-image: url('../photos/scream8.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#scream9 {
+    background-image: url('../photos/scream9.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#scream10 {
+    background-image: url('../photos/scream10.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#scream11 {
+    background-image: url('../photos/scream11.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#scream12 {
+    background-image: url('../photos/scream12.png');
+    background-size: cover;
+    background-position: center;
 }
