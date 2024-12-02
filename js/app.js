@@ -9,12 +9,14 @@ const cardBacks = [
 /*---------------------------- Variables (state) ----------------------------*/
 
 let flippedCards = [];
-let shuffledCards = [];
-let cardBack1, cardBack2;
+// let shuffledCards = [];
+// let cardBack1, cardBack2;
+let matchedPairs = 0;
 
 /*------------------------ Cached Element References ------------------------*/
 
 const cards = document.querySelectorAll('.card-inner');
+const gameBoard = document.querySelector('.game');
 
 /*-------------------------------- Functions --------------------------------*/
 
@@ -35,11 +37,15 @@ function flipCards(event) {
 
 function checkForMatch(){
     const [card1, card2] = flippedCards;
-    const cardBack1 = card1.querySelector('.card-back');
-    const cardBack2 = card2.querySelector('.card-back');
+    const cardBack1 = card1.querySelector('.card-back').id;
+    const cardBack2 = card2.querySelector('.card-back').id;
 
-    if (cardBack1.id === cardBack2.id) {
+    if (cardBack1 === cardBack2) {
         console.log('Match');
+        matchedPairs++;
+        if (matchedPairs === cardBacks.length / 2){
+            console.log('matched')
+        }
     } else {
         console.log('No Match')
         card1.classList.remove('flipped');

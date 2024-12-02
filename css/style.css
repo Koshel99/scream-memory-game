@@ -1,8 +1,60 @@
 
+/* styling for body */
+
+body {
+    background-image: url('../Assets/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
 /* styling for title */
 
 h1 {
+    Font-family: "Bangers", system-ui;
     text-align: center;
+    background-color: white;
+    font-size: 60px;
+}
+
+
+/* Styling the message container */
+
+#message-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #ffa8a8, #f07a65);
+    padding: 15px 20px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+#message {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    margin: 0;
+}
+
+.right-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Timer and Matches (right) */
+#timer, #matches {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    margin: 0;
 }
 
 /* Styling of the board */
@@ -14,11 +66,11 @@ h1 {
     gap: 5px;
     justify-content: center;
     margin: 20px 0;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
 }
 
-/* Styling for the front side of the card */
+/* Styling for the card in general */
 
 div.card-front {
     background-image: url('../Assets/scream0.png');
@@ -122,4 +174,33 @@ div.card-front {
     background-image: url('../photos/scream12.png');
     background-size: cover;
     background-position: center;
+}
+
+/* Style for the Start Button */
+#start-button {
+    background: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgba(255, 174, 87, 0.2), -5px -5px 20px rgba(255, 174, 87, 0.2);
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+        /* I googled how to make this effect around the box*/
+}
+
+#start-button:hover {
+    background: #ff8766;
+    color: white;
+    box-shadow: 5px 5px 25px rgba(255, 174, 87, 0.3), -5px -5px 25px rgba(255, 174, 87, 0.3);
+    transform: scale(1.05);
+}
+
+#start-button:focus {
+    outline: none;
 }
