@@ -1,6 +1,4 @@
-
-/* styling for body */
-
+/* Styling for body */
 body {
     background-image: url('../Assets/Background.jpg');
     background-size: cover;
@@ -12,19 +10,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
-/* styling for title */
-
+/* Styling for title */
 h1 {
-    Font-family: "Bangers", system-ui;
+    font-family: "Bangers", system-ui;
     text-align: center;
     background-color: white;
     font-size: 60px;
 }
 
-
-/* Styling the message container */
-
+/* Styling the message */
 #message-container {
     display: flex;
     justify-content: space-between;
@@ -44,12 +38,7 @@ h1 {
     margin: 0;
 }
 
-.right-container {
-    display: flex;
-    gap: 20px;
-}
-
-/* Timer and Matches (right) */
+/* Timer and Matches */
 #timer, #matches {
     font-weight: bold;
     font-size: 16px;
@@ -57,126 +46,61 @@ h1 {
     margin: 0;
 }
 
-/* Styling of the board */
-
-.game{
+/* Styling the game container */
+.game-container {
     display: grid;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: repeat(3, 100px);
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
     margin: 20px 0;
     margin-top: 50px;
     text-align: center;
 }
 
-/* Styling for the card in general */
-
-div.card-front {
-    background-image: url('../Assets/scream0.png');
-    background-size: contain;
-    background-position: center;
+/* General card container styling */
+.card-inner {
+    position: relative;
     width: 100px;
     height: 100px;
-}
-
-.card-inner {
-    display: block;
+    transform-style: preserve-3d;
     cursor: pointer;
     transition: transform 0.6s;
-    position: relative;
 }
 
+/* Front face of the card */
+.card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    background-image: url('../Assets/scream0.png');
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Back face of the card */
 .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
     transform: rotateY(180deg);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* When the card is flipped, rotate it 180 degrees */
 .card-inner.flipped {
     transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden
-}
-
-/* Individual card styles for back cards */
-
-#scream1 {
-    background-image: url('../photos/scream1.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#scream2 {
-    background-image: url('../photos/scream2.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#scream3 {
-    background-image: url('../photos/scream3.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#scream4 {
-    background-image: url('../photos/scream4.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#scream5 {
-    background-image: url('../photos/scream5.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#scream6 {
-    background-image: url('../photos/scream6.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#scream7 {
-    background-image: url('../photos/scream7.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#scream8 {
-    background-image: url('../photos/scream8.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#scream9 {
-    background-image: url('../photos/scream9.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#scream10 {
-    background-image: url('../photos/scream10.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#scream11 {
-    background-image: url('../photos/scream11.png');
-    background-size: cover;
-    background-position: center;
-}
-
-#scream12 {
-    background-image: url('../photos/scream12.png');
-    background-size: cover;
-    background-position: center;
-}
-
-/* Style for the Start Button */
+/* Styling for the Start Button */
 #start-button {
     background: white;
     padding: 15px 30px;
@@ -191,7 +115,6 @@ div.card-front {
     margin: 0 auto;
     display: block;
     margin-top: 40px;
-        /* I googled how to make this effect around the box*/
 }
 
 #start-button:hover {
@@ -204,3 +127,36 @@ div.card-front {
 #start-button:focus {
     outline: none;
 }
+
+/* General styles for all scream cards */
+#scream1, #scream2, #scream3, #scream4, #scream5, #scream6 {
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Funeral  */
+/* Individual card styles */
+/* #scream1 {
+    background-image: url('../photos/scream1.png');
+}
+
+#scream2 {
+    background-image: url('../photos/scream2.png');
+}
+
+#scream3 {
+    background-image: url('../photos/scream3.png');
+}
+
+#scream4 {
+    background-image: url('../photos/scream4.png');
+}
+
+#scream5 {
+    background-image: url('../photos/scream5.png');
+}
+
+#scream6 {
+    background-image: url('../photos/scream6.png');
+} */
