@@ -1,5 +1,3 @@
-# scream-memory-game
-
 # Final Call: Scream Memory Game
 
 ---
