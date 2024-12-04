@@ -1,13 +1,13 @@
-// Although this is version 2 thats amended by chatgpt / the card backs still wont show. 
+// Although this is version 2 thats amended by chatgpt / the card backs still wont show
 
 // ----------------------------- Constants -----------------------------
 const cardBacks = [
-    '../photos/scream1.png',
-    '../photos/scream2.png',
-    '../photos/scream3.png',
-    '../photos/scream4.png',
-    '../photos/scream5.png',
-    '../photos/scream6.png',
+    './Assets/scream1.png',
+    './Assets/scream2.jpg',
+    './Assets/scream3.png',
+    './Assets/scream4.jpg',
+    './Assets/scream5.png',
+    './Assets/scream6.png',
 ];
 
 // ----------------------------- Variables (state) -----------------------------
@@ -30,7 +30,6 @@ function shuffle(array) {
 } // I fixed this with chat gpt 
 
 
-// I used chatgpt this entire thing as I orignally added HTML and it was just turned the image left and right so I tried to do it this way hoping it will turn
 
 // Create card elements
 function createCard(imageSrc) {
@@ -75,7 +74,6 @@ function checkMatch() {
         flippedCards = [];
         updateMatches();
 
-        // Check for win condition
         if (matches === cardBacks.length) {
             endGame("Yey! You survived Ghostface!");
         }
@@ -103,7 +101,7 @@ function startGame() {
     shuffle(shuffledCards);
 
     const gameContainer = document.querySelector('.game-container');
-    gameContainer.innerHTML = ''; // I googled this to understand
+    gameContainer.innerHTML = '';
 
     shuffledCards.forEach(imageSrc => {
         const card = createCard(imageSrc);
