@@ -1,3 +1,5 @@
+// Although this is version 2 thats amended by chatgpt / the card backs still wont show. 
+
 // ----------------------------- Constants -----------------------------
 const cardBacks = [
     '../photos/scream1.png',
@@ -50,7 +52,7 @@ function createCard(imageSrc) {
     return card;
 }
 
-// Flip card logic
+// Flip cards:
 function flipCard(card) {
     if (card.classList.contains('flipped') || flippedCards.length === 2) return;
 
@@ -75,7 +77,7 @@ function checkMatch() {
 
         // Check for win condition
         if (matches === cardBacks.length) {
-            endGame("Congratulations! You survived Ghostface!");
+            endGame("Yey! You survived Ghostface!");
         }
     } else {
         setTimeout(() => {
@@ -97,11 +99,11 @@ function startGame() {
     matches = 0;
     remainingTime = gameTime;
     flippedCards = [];
-    shuffledCards = [...cardBacks, ...cardBacks]; // I googled this
+    shuffledCards = [...cardBacks, ...cardBacks]; // I googled this to understand
     shuffle(shuffledCards);
 
     const gameContainer = document.querySelector('.game-container');
-    gameContainer.innerHTML = ''; // I googled this
+    gameContainer.innerHTML = ''; // I googled this to understand
 
     shuffledCards.forEach(imageSrc => {
         const card = createCard(imageSrc);
