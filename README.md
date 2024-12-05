@@ -27,16 +27,43 @@ Based on the iconic horror franchise *Scream*, this memory game challenges playe
 - Track the number of matches and time remaining as you play.
 
 ### Visual and Audio Design
-- **Theme:** A unique combination of slasher horror with a comic twist, accompanied by Knife Party's *Internet Friends* for an adrenaline-filled mood.
+- **Theme:** A unique combination of slasher horror with a comic twist, accompanied by Knife Party's *Internet Friends* for an adrenaline-filled mood.  
 - **Scream-Themed Cards:** AI-generated images bring a fresh and humorous take on the *Scream* universe.
 
 ---
 
 ## How to Play
+
 1. Start the game and watch the cards shuffle randomly.
 2. Flip two cards at a time to reveal their backs.
 3. Match pairs to progress, or watch as mismatched cards reset.
 4. Match all pairs before the timer hits zero to escape Ghostface and win the game!
+
+---
+
+## Getting Started
+
+### Deployed Game
+[Play the Game Here](https://koshel99.github.io/scream-memory-game/)
+
+### Planning Materials
+Check out the planning for this project: [Trello Board](https://trello.com/b/m678NqkD/final-call-first-project-yasmina)
+
+---
+
+## Technologies Used
+
+- **JavaScript**
+- **HTML**
+- **CSS**
+
+---
+
+## Next Steps
+
+### Planned Enhancements
+1. **Adventure Game Dialogue**: Add an introductory scene where Ghostface calls the player and asks personalized questions like their favorite movie, creating an immersive narrative.
+2. **Levels and Progression**: Implement multiple levels of the memory game, increasing in difficulty as the player progresses.  
 
 ---
 
